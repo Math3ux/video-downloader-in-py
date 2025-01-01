@@ -8,9 +8,6 @@ def download_video(video_url):
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         ydl.download([video_url])
 
-
-print("Digite o link do vídeo: ");
-
-video_url = input();
+video_url = input("Digite o link do vídeo: ");
 
 download_video(video_url);
